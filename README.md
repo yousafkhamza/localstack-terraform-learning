@@ -68,7 +68,7 @@ localstack/
 ├── 🔧 .gitignore                 # Git ignore rules
 ├── ⚙️ env.sh                     # Environment setup script
 ├── 🎯 setup.sh                   # Automated setup script
-├── ✅ validate-env.sh             # Environment validation
+├── ✅ validate-env.sh            # Environment validation
 ├── 🧪 test_lambda.sh             # Lambda testing script
 ├── 🐍 aws_demo.py                # Python boto3 examples
 ├── 📋 aws_commands_reference.sh  # AWS CLI commands
@@ -82,7 +82,6 @@ localstack/
 │
 └── ⚡ Lambda Function:
     ├── lambda_function.py        # Main Lambda code
-    ├── lambda_function_advanced.py # Advanced example
     └── lambda_function.zip       # Deployment package
 ```
 
