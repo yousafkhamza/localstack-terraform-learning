@@ -403,34 +403,6 @@ To stop LocalStack:
 3. Practice CI/CD with Terraform and LocalStack
 4. Learn about Terraform modules and best practices
 
-## 🔗 GitHub Setup
-
-This repository is configured with a comprehensive `.gitignore` file that excludes:
-- Terraform state files and directories
-- Environment configuration files  
-- AWS credentials
-- Temporary and cache files
-- IDE-specific files
-
-### First Time Setup:
-```bash
-# Initialize and add files
-git add .
-git commit -m "Initial commit: LocalStack + Terraform learning environment"
-
-# Add your GitHub repository
-git remote add origin https://github.com/yourusername/your-repo-name.git
-git branch -M main
-git push -u origin main
-```
-
-### Regular Updates:
-```bash
-git add .
-git commit -m "Update: describe your changes"
-git push
-```
-
 **⚠️ Important:** Never commit `.env`, `.localstack-env`, or Terraform state files to public repositories!
 
 Happy learning! 🚀
