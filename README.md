@@ -215,21 +215,6 @@ aws lambda invoke \
 cat response.json
 ```
 
-**Advanced testing:**
-```bash
-# Run comprehensive Lambda tests
-./test_lambda.sh
-
-# Test with custom event data
-echo '{"user": "student", "learning": "aws"}' > event.json
-aws lambda invoke \
-  --endpoint-url=http://localhost:4566 \
-  --function-name localstack-demo-lambda \
-  --profile localstack \
-  --payload file://event.json \
-  response.json
-```
-
 ### Explore S3 Operations
 
 List S3 buckets:
