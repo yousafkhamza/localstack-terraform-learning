@@ -9,7 +9,8 @@ resource "aws_instance" "demo" {
   associate_public_ip_address = true
 
   user_data = <<-EOF
-              #!/bin/bash
-              echo "Hello from LocalStack EC2" > /tmp/hello.txt
-              EOF
+      #!/bin/bash
+      echo "Hello from LocalStack EC2" > /tmp/hello.txt
+      cat /tmp/hello.txt
+    EOF
 }

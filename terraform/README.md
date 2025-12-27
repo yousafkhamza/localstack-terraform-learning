@@ -15,12 +15,18 @@ cd terraform
 
 ---
 
-### Set the environment
+### Set the AWS PROFILE and environment
+
+set the AWS Profile which you're using
+
+```bash
+export AWS_PROFILE=localstack
+```
 
 Set the environment you want to work with (`development`, `staging`, `production`).
 
 ```bash
-export TF_ENV=staging
+export TF_ENV=development
 ```
 
 ---
