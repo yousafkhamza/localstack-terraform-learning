@@ -24,5 +24,15 @@ provider "aws" {
     sts        = "http://localhost:4566"
     logs       = "http://localhost:4566"
     cloudwatch = "http://localhost:4566"
+    ec2        = "http://localhost:4566"
+  }
+
+  default_tags {
+    tags = {
+      Environment = var.environment
+      ManagedBy   = "terraform"
+      Project     = "localstack-learning"
+      Owner       = "yousaf"
+    }
   }
 }
