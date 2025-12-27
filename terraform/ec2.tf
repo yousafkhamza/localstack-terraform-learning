@@ -7,10 +7,4 @@ resource "aws_instance" "demo" {
   vpc_security_group_ids = [aws_security_group.demo.id]
 
   associate_public_ip_address = true
-
-  user_data = <<-EOF
-      #!/bin/bash
-      echo "Hello from LocalStack EC2" > /tmp/hello.txt
-      cat /tmp/hello.txt
-    EOF
 }
